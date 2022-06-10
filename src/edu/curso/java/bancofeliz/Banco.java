@@ -7,5 +7,10 @@ public class Banco {
 		System.out.println(cuentaBancaria);
 		cuentaBancaria.extraer(monto);
 	}
+	
+	public void mostrarCostoProducto(Producto producto) {
+		System.out.println("Tipo: " + producto.getClass().getName());
+		System.out.println(producto.calcularCostoDeVenta());
+	}
 
 }

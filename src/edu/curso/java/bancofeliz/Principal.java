@@ -16,7 +16,12 @@ public class Principal {
 		banco1.extraerDeCuentaBancanria(cuentaCorriente1, 2000.0);
 		banco1.extraerDeCuentaBancanria(cajaDeAhorro1, 5000.0);
 		
+		SeguroDeVida seguroDeVida1 = new SeguroDeVida();
 		
+		
+		banco1.mostrarCostoProducto(seguroDeVida1);		
+		banco1.mostrarCostoProducto(cuentaCorriente1);
+		banco1.mostrarCostoProducto(cajaDeAhorro1);
 		
 	}
 
