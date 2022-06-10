@@ -1,13 +1,13 @@
 package edu.curso.java.bancofeliz;
 
-public class CuentaBancaria {
+public abstract class CuentaBancaria {
 	
 	private Long numeroDeCuenta;
 	private Double saldo;
 	
-	public CuentaBancaria() {
+	/*public CuentaBancaria() {
 		
-	}
+	}*/
 	
 	public CuentaBancaria(Long numeroDeCuenta, Double saldo) {
 		super();
@@ -15,9 +15,7 @@ public class CuentaBancaria {
 		this.saldo = saldo;
 	}
 
-	public void extraer(Double monto) {
-		saldo = saldo - monto;
-	}
+	public abstract void extraer(Double monto);
 
 	public Long getNumeroDeCuenta() {
 		return numeroDeCuenta;

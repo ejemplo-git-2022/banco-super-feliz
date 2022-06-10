@@ -5,6 +5,9 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		
+		//CuentaBancaria cuentaBancaria1 = new CuentaBancaria(100, 10000.0);
+		
 		CajaDeAhorro cajaDeAhorro1 = new CajaDeAhorro(4507L, 10000.0);
 		cajaDeAhorro1.extraer(5000.0);
 		System.out.println(cajaDeAhorro1);
