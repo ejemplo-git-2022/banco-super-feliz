@@ -9,12 +9,12 @@ public class Principal {
 		//CuentaBancaria cuentaBancaria1 = new CuentaBancaria(100, 10000.0);
 		
 		CajaDeAhorro cajaDeAhorro1 = new CajaDeAhorro(4507L, 10000.0);
-		cajaDeAhorro1.extraer(5000.0);
-		System.out.println(cajaDeAhorro1);
 		
 		CuentaCorriente cuentaCorriente1 = new CuentaCorriente(4508L, 15000.0, 10000.0);
-		cuentaCorriente1.extraer(20000.0);
-		System.out.println(cuentaCorriente1);
+		
+		Banco banco1 = new Banco();
+		banco1.extraerDeCuentaBancanria(cuentaCorriente1, 2000.0);
+		banco1.extraerDeCuentaBancanria(cajaDeAhorro1, 5000.0);
 		
 		
 		
