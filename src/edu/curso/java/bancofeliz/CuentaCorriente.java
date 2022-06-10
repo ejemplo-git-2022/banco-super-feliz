@@ -1,6 +1,6 @@
 package edu.curso.java.bancofeliz;
 
-public class CuentaCorriente extends CuentaBancaria {
+public class CuentaCorriente extends CuentaBancaria implements Producto {
 
 	private Double limiteExtra;
 
@@ -26,6 +26,12 @@ public class CuentaCorriente extends CuentaBancaria {
 		} else {
 			System.out.println("No tenes + plata en la cuenta: " + super.getNumeroDeCuenta());
 		}
+	}
+
+	@Override
+	public Double calcularCostoDeVenta() {
+		// TODO Auto-generated method stub
+		return 2000.0;
 	}
 
 	

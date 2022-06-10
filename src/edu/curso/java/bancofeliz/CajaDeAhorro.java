@@ -1,6 +1,6 @@
 package edu.curso.java.bancofeliz;
 
-public class CajaDeAhorro extends CuentaBancaria {
+public class CajaDeAhorro extends CuentaBancaria implements Producto {
 
 	public CajaDeAhorro(Long numeroDeCuenta, Double saldo) {
 		super(numeroDeCuenta, saldo);
@@ -22,6 +22,12 @@ public class CajaDeAhorro extends CuentaBancaria {
 		} else {
 			System.out.println("No tenes + plata en la cuenta: " + super.getNumeroDeCuenta());
 		}
+	}
+
+	@Override
+	public Double calcularCostoDeVenta() {
+		// TODO Auto-generated method stub
+		return 1500.0;
 	}
 
 }
